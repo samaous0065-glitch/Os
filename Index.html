@@ -19,7 +19,7 @@
 <meta property="og:description" content="Built for the ring. Priced for the fight. Order on WhatsApp with cash on delivery.">
 <meta property="og:image" content="assets/hero-gloves.jpg">
 <meta property="og:type" content="product">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0d'/%3E%3Ctext x='50' y='68' font-family='Impact,sans-serif' font-size='54' fill='%23e5122b' text-anchor='middle'%3EBH%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0d'/%3E%3Ctext x='50' y='68' font-family='Impact,sans-serif' font-size='54' fill='%23722f37' text-anchor='middle'%3EBH%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,9 +36,9 @@
   --panel-2:#17171f;
   --line:#26262f;
   --line-soft:#1d1d25;
-  --red:#e5122b;
-  --red-bright:#ff2440;
-  --red-deep:#9c0a1c;
+  --garnet:#722f37;
+  --garnet-light:#c4566a;
+  --garnet-deep:#4a1b21;
   --white:#ffffff;
   --muted:#9b9ba6;
   --muted-2:#6d6d78;
@@ -69,13 +69,13 @@ img{max-width:100%;display:block;height:auto}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 ul{list-style:none}
-::selection{background:var(--red);color:#fff}
+::selection{background:var(--garnet);color:#fff}
 
 /* scrollbar */
 ::-webkit-scrollbar{width:10px}
 ::-webkit-scrollbar-track{background:#0a0a0d}
 ::-webkit-scrollbar-thumb{background:#2b2b34;border-radius:10px;border:2px solid #0a0a0d}
-::-webkit-scrollbar-thumb:hover{background:var(--red)}
+::-webkit-scrollbar-thumb:hover{background:var(--garnet)}
 
 .wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:22px}
 
@@ -98,19 +98,19 @@ section[id],main[id]{scroll-margin-top:86px}
   font-weight:500;
   letter-spacing:.26em;
   text-transform:uppercase;
-  color:var(--red-bright);
+  color:var(--garnet-light);
   display:inline-flex;
   align-items:center;
   gap:10px;
 }
 .eyebrow::before{
-  content:"";width:26px;height:2px;background:var(--red-bright);display:block;flex:none;
+  content:"";width:26px;height:2px;background:var(--garnet-light);display:block;flex:none;
 }
 .lead{color:var(--muted);font-size:1.03rem;max-width:58ch}
 .section{padding:clamp(64px,9vw,120px) 0;position:relative}
 .section-head{max-width:720px;margin-bottom:clamp(38px,5vw,60px)}
 .section-head h2{font-size:clamp(2rem,5.2vw,3.4rem);margin:16px 0 16px}
-.txt-red{color:var(--red-bright)}
+.txt-red{color:var(--garnet-light)}
 .u-outline{
   color:transparent;
   -webkit-text-stroke:1.4px rgba(255,255,255,.45);
@@ -130,10 +130,10 @@ section[id],main[id]{scroll-margin-top:86px}
   white-space:nowrap;
 }
 .btn svg{width:19px;height:19px;flex:none}
-.btn-primary{background:var(--red);color:#fff;box-shadow:0 12px 30px -10px rgba(229,18,43,.85)}
-.btn-primary:hover{background:var(--red-bright);transform:translateY(-3px);box-shadow:0 18px 40px -10px rgba(229,18,43,.95)}
+.btn-primary{background:var(--garnet);color:#fff;box-shadow:0 12px 30px -10px rgba(150,56,70,.85)}
+.btn-primary:hover{background:var(--garnet-light);transform:translateY(-3px);box-shadow:0 18px 40px -10px rgba(150,56,70,.95)}
 .btn-ghost{border-color:var(--line);background:rgba(255,255,255,.03);color:#fff;backdrop-filter:blur(6px)}
-.btn-ghost:hover{border-color:var(--red);color:#fff;background:rgba(229,18,43,.1);transform:translateY(-3px)}
+.btn-ghost:hover{border-color:var(--garnet);color:#fff;background:rgba(150,56,70,.1);transform:translateY(-3px)}
 .btn-wa{background:var(--wa);color:#04240f;font-weight:700}
 .btn-wa:hover{background:#3ae57c;transform:translateY(-3px);box-shadow:0 18px 40px -12px rgba(37,211,102,.7)}
 .btn-lg{padding:18px 36px;font-size:1.02rem}
@@ -144,7 +144,7 @@ section[id],main[id]{scroll-margin-top:86px}
    5. TOP ANNOUNCEMENT BAR
    ========================================================================== */
 .topbar{
-  background:linear-gradient(90deg,var(--red-deep),var(--red),var(--red-deep));
+  background:linear-gradient(90deg,var(--garnet-deep),var(--garnet),var(--garnet-deep));
   font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   overflow:hidden;position:relative;z-index:60;
 }
@@ -156,7 +156,7 @@ section[id],main[id]{scroll-margin-top:86px}
 /* ==========================================================================
    6. HEADER / NAV
    ========================================================================== */
-.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--red-bright);z-index:120;transition:width .1s linear}
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--garnet-light);z-index:120;transition:width .1s linear}
 header{
   position:sticky;top:0;z-index:100;
   background:rgba(8,8,11,.72);
@@ -172,10 +172,10 @@ header.stuck .nav{height:64px}
 .logo{display:flex;align-items:center;gap:11px;flex:none}
 .logo-mark{
   width:42px;height:42px;border-radius:9px;flex:none;
-  background:linear-gradient(140deg,var(--red),var(--red-deep));
+  background:linear-gradient(140deg,var(--garnet),var(--garnet-deep));
   display:grid;place-items:center;
   font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.02em;
-  box-shadow:0 8px 20px -8px rgba(229,18,43,.9),inset 0 1px 0 rgba(255,255,255,.25);
+  box-shadow:0 8px 20px -8px rgba(150,56,70,.9),inset 0 1px 0 rgba(255,255,255,.25);
 }
 .logo-txt{font-family:var(--display);line-height:1;display:flex;flex-direction:column;gap:3px}
 .logo-txt strong{font-size:1.18rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
@@ -189,7 +189,7 @@ header.stuck .nav{height:64px}
 .nav-links a:hover{color:#fff;background:rgba(255,255,255,.05)}
 .nav-links a.active{color:#fff}
 .nav-links a.active::after{
-  content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;background:var(--red-bright);border-radius:2px;
+  content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;background:var(--garnet-light);border-radius:2px;
 }
 .nav-right{display:flex;align-items:center;gap:12px}
 .nav-right .btn{padding:12px 22px;font-size:.86rem}
@@ -218,13 +218,13 @@ header.stuck .nav{height:64px}
 .hero{position:relative;overflow:hidden;padding:clamp(46px,7vw,86px) 0 clamp(56px,8vw,110px)}
 .hero::before{
   content:"";position:absolute;top:-24%;right:-14%;width:62%;height:88%;
-  background:radial-gradient(circle at 50% 50%,rgba(229,18,43,.3),transparent 62%);
+  background:radial-gradient(circle at 50% 50%,rgba(150,56,70,.3),transparent 62%);
   filter:blur(40px);pointer-events:none;
 }
 .hero::after{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:
-    linear-gradient(115deg,transparent 46%,rgba(229,18,43,.07) 46.1%,rgba(229,18,43,.07) 52%,transparent 52.1%),
+    linear-gradient(115deg,transparent 46%,rgba(150,56,70,.07) 46.1%,rgba(150,56,70,.07) 52%,transparent 52.1%),
     linear-gradient(115deg,transparent 60%,rgba(255,255,255,.03) 60.1%,rgba(255,255,255,.03) 63%,transparent 63.1%);
 }
 .hero-grid{
@@ -232,7 +232,7 @@ header.stuck .nav{height:64px}
   display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,58px);align-items:center;
 }
 .hero h1{font-size:clamp(2.6rem,7.4vw,5.1rem);margin:22px 0 22px}
-.hero h1 em{font-style:normal;display:block;color:var(--red-bright);text-shadow:0 0 46px rgba(229,18,43,.55)}
+.hero h1 em{font-style:normal;display:block;color:var(--garnet-light);text-shadow:0 0 46px rgba(150,56,70,.55)}
 .hero .lead{font-size:clamp(1rem,1.6vw,1.12rem);max-width:50ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 26px}
 
@@ -272,9 +272,9 @@ header.stuck .nav{height:64px}
 }
 .badge-float{
   position:absolute;bottom:-18px;left:-18px;z-index:3;
-  background:linear-gradient(140deg,var(--red),var(--red-deep));
+  background:linear-gradient(140deg,var(--garnet),var(--garnet-deep));
   padding:15px 22px;border-radius:12px;
-  box-shadow:0 18px 40px -14px rgba(229,18,43,.95);
+  box-shadow:0 18px 40px -14px rgba(150,56,70,.95);
   display:flex;align-items:center;gap:13px;
 }
 .badge-float svg{width:26px;height:26px;flex:none;fill:#fff}
@@ -287,7 +287,7 @@ header.stuck .nav{height:64px}
 .trust{border-block:1px solid var(--line-soft);background:var(--coal)}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft)}
 .trust-item{background:var(--coal);padding:26px 22px;display:flex;gap:14px;align-items:flex-start}
-.trust-item svg{width:24px;height:24px;flex:none;stroke:var(--red-bright);fill:none;stroke-width:1.6;margin-top:3px}
+.trust-item svg{width:24px;height:24px;flex:none;stroke:var(--garnet-light);fill:none;stroke-width:1.6;margin-top:3px}
 .trust-item b{display:block;font-size:.92rem;font-weight:600;letter-spacing:.01em}
 .trust-item span{font-size:.79rem;color:var(--muted-2);line-height:1.5}
 
@@ -303,16 +303,16 @@ header.stuck .nav{height:64px}
 }
 .card::before{
   content:"";position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--red),transparent);transform:scaleX(0);transform-origin:left;
+  background:linear-gradient(90deg,var(--garnet),transparent);transform:scaleX(0);transform-origin:left;
   transition:transform .45s var(--ease);
 }
 .card:hover{transform:translateY(-7px);border-color:#33333f;box-shadow:0 26px 54px -24px rgba(0,0,0,.9)}
 .card:hover::before{transform:scaleX(1)}
 .card-ico{
   width:50px;height:50px;border-radius:11px;display:grid;place-items:center;margin-bottom:20px;
-  background:rgba(229,18,43,.12);border:1px solid rgba(229,18,43,.32);
+  background:rgba(150,56,70,.12);border:1px solid rgba(150,56,70,.32);
 }
-.card-ico svg{width:23px;height:23px;stroke:var(--red-bright);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card-ico svg{width:23px;height:23px;stroke:var(--garnet-light);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .card h3{font-family:var(--display);font-size:1.32rem;text-transform:uppercase;letter-spacing:.02em;margin-bottom:10px;font-weight:600}
 .card p{color:var(--muted);font-size:.92rem}
 .card .num{
@@ -340,9 +340,9 @@ header.stuck .nav{height:64px}
 }
 .layer:hover{background:var(--panel);border-color:var(--line);transform:translateX(6px)}
 .layer .n{
-  font-family:var(--display);font-size:1.05rem;color:var(--red-bright);
+  font-family:var(--display);font-size:1.05rem;color:var(--garnet-light);
   width:34px;height:34px;border-radius:8px;display:grid;place-items:center;flex:none;
-  background:rgba(229,18,43,.1);border:1px solid rgba(229,18,43,.3);
+  background:rgba(150,56,70,.1);border:1px solid rgba(150,56,70,.3);
 }
 .layer b{display:block;font-size:.97rem;font-weight:600}
 .layer span{font-size:.83rem;color:var(--muted-2)}
@@ -360,7 +360,7 @@ th{
 }
 tbody tr:last-child td{border-bottom:0}
 tbody tr{transition:background .25s}
-tbody tr:hover{background:rgba(229,18,43,.05)}
+tbody tr:hover{background:rgba(150,56,70,.05)}
 td:first-child{color:var(--muted);width:38%}
 td strong{color:#fff;font-weight:600}
 
@@ -370,9 +370,9 @@ td strong{color:#fff;font-weight:600}
   border:1px solid var(--line-soft);border-radius:12px;padding:20px;background:var(--coal);
   transition:border-color .3s,transform .3s var(--ease),background .3s;
 }
-.size-card:hover{border-color:var(--red);transform:translateY(-5px);background:var(--panel)}
+.size-card:hover{border-color:var(--garnet);transform:translateY(-5px);background:var(--panel)}
 .size-card strong{font-family:var(--display);font-size:1.75rem;display:block;line-height:1;color:#fff}
-.size-card em{font-style:normal;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red-bright);display:block;margin:8px 0 12px}
+.size-card em{font-style:normal;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--garnet-light);display:block;margin:8px 0 12px}
 .size-card p{font-size:.82rem;color:var(--muted-2);line-height:1.55}
 
 /* ==========================================================================
@@ -388,14 +388,14 @@ td strong{color:#fff;font-weight:600}
   border:1px solid var(--line-soft);background:var(--coal);
   transition:border-color .3s,transform .3s var(--ease),background .3s;
 }
-.cw-opt:hover{border-color:var(--red);background:var(--panel);transform:translateX(6px)}
+.cw-opt:hover{border-color:var(--garnet);background:var(--panel);transform:translateX(6px)}
 .swatch{width:44px;height:44px;border-radius:10px;flex:none;border:1px solid rgba(255,255,255,.14);position:relative;overflow:hidden}
-.sw-1{background:linear-gradient(135deg,#111 48%,#e5122b 48%)}
+.sw-1{background:linear-gradient(135deg,#111 52%,#722f37 52%)}
 .sw-2{background:linear-gradient(135deg,#111 48%,#e9e9ee 48%)}
-.sw-3{background:linear-gradient(135deg,#c1111f 48%,#111 48%)}
+.sw-3{background:linear-gradient(135deg,#8a2b33 48%,#111 48%)}
 .cw-opt b{display:block;font-size:.97rem;font-weight:600}
 .cw-opt span{font-size:.8rem;color:var(--muted-2)}
-.cw-opt .pill{margin-left:auto;font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red-bright);border:1px solid rgba(229,18,43,.4);border-radius:100px;padding:4px 11px;white-space:nowrap}
+.cw-opt .pill{margin-left:auto;font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--garnet-light);border:1px solid rgba(150,56,70,.4);border-radius:100px;padding:4px 11px;white-space:nowrap}
 
 /* ==========================================================================
    13. RING / CTA BANNER (parallax)
@@ -406,7 +406,7 @@ td strong{color:#fff;font-weight:600}
   background-attachment:fixed;text-align:center;overflow:hidden;
 }
 .ring::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,11,.94),rgba(8,8,11,.74) 45%,rgba(8,8,11,.96))}
-.ring::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 30%,rgba(229,18,43,.14))}
+.ring::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 30%,rgba(150,56,70,.14))}
 .ring .wrap{position:relative;z-index:2}
 .ring .display{font-size:clamp(2rem,6.4vw,4.3rem);margin-bottom:20px}
 .ring p{color:#c9c9d2;max-width:62ch;margin:0 auto 34px;font-size:1.05rem}
@@ -428,7 +428,7 @@ td strong{color:#fff;font-weight:600}
 .avatar{
   width:42px;height:42px;border-radius:50%;flex:none;display:grid;place-items:center;
   font-family:var(--display);font-size:.95rem;letter-spacing:.04em;
-  background:linear-gradient(140deg,var(--red),var(--red-deep));color:#fff;
+  background:linear-gradient(140deg,var(--garnet),var(--garnet-deep));color:#fff;
 }
 .who b{display:block;font-size:.9rem;font-weight:600}
 .who span{font-size:.76rem;color:var(--muted-2)}
@@ -446,13 +446,13 @@ td strong{color:#fff;font-weight:600}
   transition:transform .35s var(--ease),border-color .35s,box-shadow .35s;
 }
 .plan:hover{transform:translateY(-7px);border-color:#3a3a46}
-.plan.best{border-color:var(--red);box-shadow:0 30px 70px -30px rgba(229,18,43,.75);transform:scale(1.02)}
+.plan.best{border-color:var(--garnet);box-shadow:0 30px 70px -30px rgba(150,56,70,.75);transform:scale(1.02)}
 .plan.best:hover{transform:scale(1.02) translateY(-7px)}
 .plan-tag{
   position:absolute;top:-13px;left:50%;transform:translateX(-50%);
-  background:var(--red);color:#fff;font-family:var(--display);font-size:.66rem;
+  background:var(--garnet);color:#fff;font-family:var(--display);font-size:.66rem;
   letter-spacing:.18em;text-transform:uppercase;padding:6px 16px;border-radius:100px;white-space:nowrap;
-  box-shadow:0 10px 24px -10px rgba(229,18,43,.95);
+  box-shadow:0 10px 24px -10px rgba(150,56,70,.95);
 }
 .plan h3{font-family:var(--display);font-size:1.5rem;text-transform:uppercase;letter-spacing:.02em;font-weight:600}
 .plan .sub{font-size:.83rem;color:var(--muted-2);margin-top:6px}
@@ -463,7 +463,7 @@ td strong{color:#fff;font-weight:600}
 .per{font-size:.8rem;color:var(--muted-2);margin-bottom:22px}
 .plist{display:flex;flex-direction:column;gap:12px;margin-bottom:28px;flex:1}
 .plist li{display:flex;gap:11px;font-size:.88rem;color:#c6c6cf;align-items:flex-start}
-.plist svg{width:17px;height:17px;flex:none;margin-top:4px;stroke:var(--red-bright);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.plist svg{width:17px;height:17px;flex:none;margin-top:4px;stroke:var(--garnet-light);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .plist li.off{color:var(--muted-2)}
 .plist li.off svg{stroke:#4a4a55}
 
@@ -471,8 +471,8 @@ td strong{color:#fff;font-weight:600}
    16. ORDER BUILDER
    ========================================================================== */
 .order{background:
-  radial-gradient(circle at 12% 18%,rgba(229,18,43,.14),transparent 45%),
-  radial-gradient(circle at 88% 82%,rgba(229,18,43,.1),transparent 45%),
+  radial-gradient(circle at 12% 18%,rgba(150,56,70,.14),transparent 45%),
+  radial-gradient(circle at 88% 82%,rgba(150,56,70,.1),transparent 45%),
   var(--coal);
   border-block:1px solid var(--line-soft);
 }
@@ -483,7 +483,7 @@ td strong{color:#fff;font-weight:600}
   display:block;font-family:var(--display);font-size:.75rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted-2);margin-bottom:11px;
 }
-.field>label span{color:var(--red-bright);float:right;letter-spacing:.06em}
+.field>label span{color:var(--garnet-light);float:right;letter-spacing:.06em}
 .opts{display:flex;flex-wrap:wrap;gap:9px}
 .opt{
   border:1px solid var(--line);border-radius:9px;padding:11px 17px;
@@ -491,11 +491,11 @@ td strong{color:#fff;font-weight:600}
   display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.02);
 }
 .opt:hover{border-color:#3d3d49;color:#fff}
-.opt.on{border-color:var(--red);background:rgba(229,18,43,.12);color:#fff;box-shadow:0 0 0 1px rgba(229,18,43,.4) inset}
+.opt.on{border-color:var(--garnet);background:rgba(150,56,70,.12);color:#fff;box-shadow:0 0 0 1px rgba(150,56,70,.4) inset}
 .opt .dotc{width:15px;height:15px;border-radius:50%;flex:none;border:1px solid rgba(255,255,255,.2)}
 .qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:rgba(255,255,255,.02)}
 .qty button{width:46px;height:48px;font-size:1.25rem;color:var(--muted);transition:.2s}
-.qty button:hover{background:rgba(229,18,43,.15);color:#fff}
+.qty button:hover{background:rgba(150,56,70,.15);color:#fff}
 .qty input{
   width:58px;height:48px;text-align:center;background:transparent;border:0;color:#fff;
   font-family:var(--display);font-size:1.15rem;border-inline:1px solid var(--line);
@@ -517,14 +517,14 @@ td strong{color:#fff;font-weight:600}
   flex:1;text-align:center;padding:12px;border:1px solid var(--line);border-radius:9px;
   font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);transition:.25s;
 }
-.builder-foot a:hover{border-color:var(--red);color:#fff;background:rgba(229,18,43,.08)}
+.builder-foot a:hover{border-color:var(--garnet);color:#fff;background:rgba(150,56,70,.08)}
 
 .steps{display:flex;flex-direction:column;gap:16px;margin-top:34px}
 .step{display:flex;gap:16px;align-items:flex-start}
 .step .n{
   width:38px;height:38px;border-radius:10px;flex:none;display:grid;place-items:center;
-  font-family:var(--display);font-size:1rem;background:rgba(229,18,43,.12);
-  border:1px solid rgba(229,18,43,.34);color:var(--red-bright);
+  font-family:var(--display);font-size:1rem;background:rgba(150,56,70,.12);
+  border:1px solid rgba(150,56,70,.34);color:var(--garnet-light);
 }
 .step b{display:block;font-size:.95rem;font-weight:600;margin-bottom:3px}
 .step p{font-size:.85rem;color:var(--muted-2)}
@@ -539,12 +539,12 @@ td strong{color:#fff;font-weight:600}
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
   padding:21px 24px;text-align:left;font-size:1rem;font-weight:600;transition:color .2s;
 }
-.faq-q:hover{color:var(--red-bright)}
+.faq-q:hover{color:var(--garnet-light)}
 .faq-q .ico{
   width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;
   border:1px solid var(--line);transition:.35s var(--ease);position:relative;
 }
-.faq-item.on .faq-q .ico{background:var(--red);border-color:var(--red);transform:rotate(135deg)}
+.faq-item.on .faq-q .ico{background:var(--garnet);border-color:var(--garnet);transform:rotate(135deg)}
 .faq-q .ico::before,.faq-q .ico::after{content:"";position:absolute;background:#fff;border-radius:2px}
 .faq-q .ico::before{width:11px;height:2px}
 .faq-q .ico::after{width:2px;height:11px}
@@ -559,12 +559,12 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
 .f-brand p{color:var(--muted-2);font-size:.88rem;margin-top:18px;max-width:36ch}
 .f-title{font-family:var(--display);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:18px}
 .f-col a,.f-col li{display:block;color:var(--muted-2);font-size:.88rem;padding:5px 0;transition:color .2s,transform .2s}
-.f-col a:hover{color:var(--red-bright);transform:translateX(4px)}
+.f-col a:hover{color:var(--garnet-light);transform:translateX(4px)}
 .socials{display:flex;gap:10px;margin-top:20px}
 .socials a{
   width:40px;height:40px;border:1px solid var(--line);border-radius:9px;display:grid;place-items:center;transition:.25s;
 }
-.socials a:hover{border-color:var(--red);background:rgba(229,18,43,.1);transform:translateY(-3px)}
+.socials a:hover{border-color:var(--garnet);background:rgba(150,56,70,.1);transform:translateY(-3px)}
 .socials svg{width:18px;height:18px;fill:var(--muted);transition:fill .25s}
 .socials a:hover svg{fill:#fff}
 .f-bottom{
@@ -599,7 +599,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
   display:grid;place-items:center;opacity:0;pointer-events:none;transition:.3s var(--ease);
 }
 .to-top.show{opacity:1;pointer-events:auto}
-.to-top:hover{border-color:var(--red);background:var(--red)}
+.to-top:hover{border-color:var(--garnet);background:var(--garnet)}
 .to-top svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* sticky mobile order bar */
@@ -671,6 +671,48 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
   .ring .hero-cta .btn{width:100%}
   .badge-float{left:0;bottom:-14px;padding:12px 16px}
 }
+
+/* ==========================================================================
+   22. CHECKOUT CONTROLS — selects, inputs, validation, zone chip
+   ========================================================================== */
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.input,.textarea,.select{
+  width:100%;font-family:var(--body);font-size:.92rem;color:#fff;
+  background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;transition:border-color .25s,box-shadow .25s,background .25s;
+}
+.input::placeholder,.textarea::placeholder{color:var(--muted-2)}
+.input:hover,.textarea:hover,.select:hover{border-color:#33333f;background:rgba(255,255,255,.04)}
+.input:focus,.textarea:focus,.select:focus{
+  outline:0;border-color:var(--garnet);background:rgba(150,56,70,.08);
+  box-shadow:0 0 0 3px rgba(150,56,70,.22);
+}
+.textarea{resize:vertical;min-height:66px;line-height:1.55}
+.select{
+  appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:44px;
+  background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8907f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;background-size:18px;
+}
+.select option{background:#12121a;color:#fff;padding:10px}
+.select optgroup{background:#0d0d11;color:var(--garnet-light);font-style:normal;font-weight:600}
+.input.err,.select.err,.textarea.err{border-color:#ff4d5e;box-shadow:0 0 0 3px rgba(255,77,94,.14)}
+.err-msg{display:none;margin-top:8px;font-size:.76rem;color:#ff6b7a;line-height:1.5}
+.err-msg.show{display:block}
+.zone-chip{
+  display:flex;align-items:center;gap:11px;flex-wrap:wrap;
+  font-size:.8rem;color:#e6d3d6;background:rgba(150,56,70,.14);
+  border:1px solid rgba(150,56,70,.42);border-radius:10px;padding:12px 15px;margin-bottom:22px;
+  transition:background .3s,border-color .3s;
+}
+.zone-chip svg{width:16px;height:16px;flex:none;stroke:var(--garnet-light);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.zone-chip b{color:#fff}
+.zone-chip .zprice{margin-left:auto;font-family:var(--display);font-size:1rem;color:#fff;letter-spacing:.03em}
+.req{color:var(--garnet-light);font-weight:700}
+#waBtn{font-size:.86rem;letter-spacing:.04em;line-height:1.4;white-space:normal;padding:17px 18px;text-align:center}
+#waBtn .ar{display:block;font-size:.78rem;opacity:.9;letter-spacing:0;margin-top:3px}
+#waBtn.busy{opacity:.75;pointer-events:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.field-row{grid-template-columns:1fr;gap:0}}
 </style>
 </head>
 <body>
@@ -681,8 +723,8 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
 <!-- ======================= ANNOUNCEMENT TICKER ======================= -->
 <div class="topbar" aria-hidden="true">
   <div class="ticker" id="ticker">
-    <span>FREE DELIVERY TO ALL 58 WILAYAS <b>•</b> CASH ON DELIVERY AVAILABLE <b>•</b> 90-DAY STITCHING WARRANTY <b>•</b> 7-DAY RETURN &amp; EXCHANGE <b>•</b> ORDER DIRECTLY ON WHATSAPP <b>•</b>&nbsp;</span>
-    <span>FREE DELIVERY TO ALL 58 WILAYAS <b>•</b> CASH ON DELIVERY AVAILABLE <b>•</b> 90-DAY STITCHING WARRANTY <b>•</b> 7-DAY RETURN &amp; EXCHANGE <b>•</b> ORDER DIRECTLY ON WHATSAPP <b>•</b>&nbsp;</span>
+    <span>LIVRAISON RAPIDE 24–72H DANS LES 58 WILAYAS <b>•</b> PAIEMENT À LA LIVRAISON <b>•</b> GARANTIE COUTURE 90 JOURS <b>•</b> ÉCHANGE SOUS 7 JOURS <b>•</b> COMMANDEZ SUR WHATSAPP <b>•</b>&nbsp;</span>
+    <span>LIVRAISON RAPIDE 24–72H DANS LES 58 WILAYAS <b>•</b> PAIEMENT À LA LIVRAISON <b>•</b> GARANTIE COUTURE 90 JOURS <b>•</b> ÉCHANGE SOUS 7 JOURS <b>•</b> COMMANDEZ SUR WHATSAPP <b>•</b>&nbsp;</span>
   </div>
 </div>
 
@@ -708,7 +750,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
       </ul>
 
       <div class="nav-right">
-        <a href="#order" class="btn btn-primary" data-wa="direct">
+        <a href="#order" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.5-.5-.68-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.01-1.03 2.46s1.06 2.86 1.2 3.06c.15.2 2.06 3.15 5 4.3.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.09 1.73-.71 1.98-1.4.25-.68.25-1.27.17-1.39-.07-.12-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23z"/></svg>
           Order Now
         </a>
@@ -744,7 +786,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
       </p>
 
       <div class="hero-cta reveal d3">
-        <a href="#order" class="btn btn-primary btn-lg" data-wa="direct">
+        <a href="#order" class="btn btn-primary btn-lg">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23z"/></svg>
           Order on WhatsApp
         </a>
@@ -795,7 +837,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
     <div class="trust-grid">
       <div class="trust-item reveal">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.2"/><circle cx="17.5" cy="18.5" r="2.2"/></svg>
-        <div><b>Fast nationwide delivery</b><span>24–72h to all 58 wilayas, free above 10,000 DA.</span></div>
+        <div><b>Fast nationwide delivery</b><span>24–72h to all 58 wilayas — 400 to 1000 DZD depending on your zone.</span></div>
       </div>
       <div class="trust-item reveal d1">
         <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/><circle cx="12" cy="15" r="1.6"/></svg>
@@ -934,7 +976,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
           <tr><td>Lining</td><td>Anti-bacterial mesh, silver-ion treated, ventilated palm</td></tr>
           <tr><td>Thumb</td><td>Attached, pre-shaped channel — protects against thumbing injuries</td></tr>
           <tr><td>Available sizes</td><td>10 oz · 12 oz · 14 oz · 16 oz</td></tr>
-          <tr><td>Available colours</td><td>Black / Red · Black / White · Red / Black</td></tr>
+          <tr><td>Available colours</td><td>Black / Garnet (#722f37) · Black / White · Garnet / Black</td></tr>
           <tr><td>Weight (pair)</td><td>Approx. 0.7 kg (12 oz) — up to 1.1 kg (16 oz)</td></tr>
           <tr><td>Discipline</td><td>Boxing, kickboxing, Muay Thai, fitness &amp; bag work</td></tr>
           <tr><td>In the box</td><td>1 pair of gloves + reusable mesh carry bag + care card</td></tr>
@@ -966,9 +1008,9 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
       <p class="lead">Same build, same padding, three looks. Choose the one that matches your gear — or grab a second pair for sparring and keep one clean for the ring.</p>
 
       <div class="cw-list">
-        <div class="cw-opt"><span class="swatch sw-1"></span><span><b>Black / Red</b><span>The signature BH look. Most ordered.</span></span><span class="pill">Best seller</span></div>
+        <div class="cw-opt"><span class="swatch sw-1"></span><span><b>Black / Garnet</b><span>The signature BH look. Most ordered.</span></span><span class="pill">Best seller</span></div>
         <div class="cw-opt"><span class="swatch sw-2"></span><span><b>Black / White</b><span>Clean, classic, works with any gym kit.</span></span><span class="pill">In stock</span></div>
-        <div class="cw-opt"><span class="swatch sw-3"></span><span><b>Red / Black</b><span>Loud on purpose. Easy to spot in a crowded gym.</span></span><span class="pill">In stock</span></div>
+        <div class="cw-opt"><span class="swatch sw-3"></span><span><b>Garnet / Black</b><span>Loud on purpose. Easy to spot in a crowded gym.</span></span><span class="pill">In stock</span></div>
       </div>
 
       <a href="#order" class="btn btn-primary btn-lg" style="margin-top:32px">
@@ -986,7 +1028,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
     <h2 class="display reveal d1">The bag doesn't care <span class="txt-red">how much you paid</span></h2>
     <p class="reveal d2">Twelve rounds, six days a week. Gloves either survive that or they don't — so we built the BH PRO-01 to survive it, then priced it so you can actually afford to train.</p>
     <div class="hero-cta reveal d3">
-      <a href="#order" class="btn btn-primary btn-lg" data-wa="direct">
+      <a href="#order" class="btn btn-primary btn-lg">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23z"/></svg>
         Order now — pay on delivery
       </a>
@@ -1033,7 +1075,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
         <span class="stars" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 4.8 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.5l7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 4.8 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.5l7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 4.8 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.5l7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 4.8 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.5l7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 1-5 4.8 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.5l7-1z"/></svg>
         </span>
-        <p class="q">"I'm a coach and ordered six pairs for the gym in black and red. Five months of daily use by different people and not one seam has opened. Buying four more next month."</p>
+        <p class="q">"I'm a coach and ordered six pairs for the gym in black and garnet. Five months of daily use by different people and not one seam has opened. Buying four more next month."</p>
         <div class="who">
           <span class="avatar">SK</span>
           <span><b>Sofiane K.</b><span>Gym coach</span></span>
@@ -1057,8 +1099,8 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
       <article class="plan reveal">
         <h3>Solo Pair</h3>
         <p class="sub">One pair — perfect for your first set.</p>
-        <div class="price"><span class="amt">7,900</span><span class="cur">DA</span></div>
-        <p class="per">7,900 DA per pair</p>
+        <div class="price"><span class="amt">7,900</span><span class="cur">DZD</span></div>
+        <p class="per">7,900 DZD per pair</p>
         <ul class="plist">
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>1 pair — any size 10–16 oz</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Any colourway</li>
@@ -1073,13 +1115,13 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
         <span class="plan-tag">Most popular — save 1,300 DA</span>
         <h3>Double Pack</h3>
         <p class="sub">Two pairs — one for the bag, one for sparring.</p>
-        <div class="price"><span class="amt">14,500</span><span class="cur">DA</span><span class="was">15,800</span></div>
-        <p class="per">7,250 DA per pair</p>
+        <div class="price"><span class="amt">14,500</span><span class="cur">DZD</span><span class="was">15,800</span></div>
+        <p class="per">7,250 DZD per pair</p>
         <ul class="plist">
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>2 pairs — mix sizes &amp; colours</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free delivery to your door</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free pair of hand wraps</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>2 mesh carry bags</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>1 free pair of hand wraps</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Priority WhatsApp support</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Priority WhatsApp support</li>
         </ul>
         <a href="#order" class="btn btn-primary btn-block">Order 2 pairs</a>
@@ -1088,11 +1130,11 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
       <article class="plan reveal d2">
         <h3>Gym Pack</h3>
         <p class="sub">Three pairs — for coaches and training partners.</p>
-        <div class="price"><span class="amt">20,900</span><span class="cur">DA</span></div>
-        <p class="per">6,966 DA per pair</p>
+        <div class="price"><span class="amt">20,900</span><span class="cur">DZD</span></div>
+        <p class="per">6,966 DZD per pair</p>
         <ul class="plist">
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>3 pairs — any mix</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free delivery + COD</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Cash on delivery (COD)</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>3 pairs of hand wraps free</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Extended 120-day warranty</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Invoice for your club</li>
@@ -1107,67 +1149,116 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
 <section class="section order" id="order">
   <div class="wrap order-grid">
     <div class="reveal">
-      <span class="eyebrow">Order in 60 seconds</span>
+      <span class="eyebrow">Checkout — Commande en 60 secondes</span>
       <h2 class="display" style="font-size:clamp(1.9rem,4.8vw,3.1rem);margin:16px 0 18px">Build your pair.<br>Send it on WhatsApp.</h2>
-      <p class="lead">Pick your size, colour and quantity, then hit the button. It opens WhatsApp with your order already written out — we confirm the price and delivery time, and you pay the courier when the gloves reach your door.</p>
+      <p class="lead">
+        Choisissez votre taille, votre couleur et votre wilaya — le prix total (avec la livraison)
+        se calcule tout seul. Vous validez, WhatsApp s'ouvre avec la commande déjà rédigée,
+        et vous payez cash quand le colis vous arrive.
+      </p>
 
       <div class="steps">
-        <div class="step"><span class="n">1</span><span><b>Choose your specs</b><p>Size 10–16 oz, any of the three colourways, 1 to 5 pairs.</p></span></div>
-        <div class="step"><span class="n">2</span><span><b>Send the message</b><p>WhatsApp opens with everything filled in. Just press send.</p></span></div>
-        <div class="step"><span class="n">3</span><span><b>Confirm &amp; receive</b><p>We reply with the total and delivery date. Pay cash on arrival.</p></span></div>
+        <div class="step"><span class="n">1</span><span><b>Choisissez vos specs</b><p>Taille 10–16 oz, 3 coloris, de 1 à 5 paires.</p></span></div>
+        <div class="step"><span class="n">2</span><span><b>Vos coordonnées</b><p>Nom, téléphone et wilaya — juste pour le livreur.</p></span></div>
+        <div class="step"><span class="n">3</span><span><b>Validez sur WhatsApp</b><p>Le message part déjà écrit. Paiement à la livraison, walo d'avance.</p></span></div>
       </div>
 
       <div class="note" style="margin-top:30px">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
-        <span>Delivery takes 24–72 hours depending on your wilaya. Free above 10,000 DA, otherwise 600 DA flat.</span>
+        <svg viewBox="0 0 24 24"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.2"/><circle cx="17.5" cy="18.5" r="2.2"/></svg>
+        <span><b style="color:#fff">Frais de livraison</b> — 400 DZD Alger &amp; environs · 600 DZD Nord, Est &amp; Ouest · 800 DZD Hauts plateaux &amp; Sud · 1000 DZD Grand Sud. Délai 24–72h.</span>
       </div>
     </div>
 
     <div class="builder reveal d1">
-      <div class="field">
-        <label>Size <span id="sizeEcho">14 oz</span></label>
-        <div class="opts" id="sizeOpts">
-          <button class="opt" data-size="10 oz">10 oz</button>
-          <button class="opt" data-size="12 oz">12 oz</button>
-          <button class="opt on" data-size="14 oz">14 oz</button>
-          <button class="opt" data-size="16 oz">16 oz</button>
+      <form id="orderForm" novalidate>
+        <!-- ---------- SPECS ---------- -->
+        <div class="field">
+          <label>Taille / المقاس <span id="sizeEcho">14 oz</span></label>
+          <div class="opts" id="sizeOpts">
+            <button type="button" class="opt" data-size="10 oz">10 oz</button>
+            <button type="button" class="opt" data-size="12 oz">12 oz</button>
+            <button type="button" class="opt on" data-size="14 oz">14 oz</button>
+            <button type="button" class="opt" data-size="16 oz">16 oz</button>
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <label>Colour <span id="colorEcho">Black / Red</span></label>
-        <div class="opts" id="colorOpts">
-          <button class="opt on" data-color="Black / Red"><span class="dotc" style="background:linear-gradient(135deg,#111 48%,#e5122b 48%)"></span>Black / Red</button>
-          <button class="opt" data-color="Black / White"><span class="dotc" style="background:linear-gradient(135deg,#111 48%,#e9e9ee 48%)"></span>Black / White</button>
-          <button class="opt" data-color="Red / Black"><span class="dotc" style="background:linear-gradient(135deg,#c1111f 48%,#111 48%)"></span>Red / Black</button>
+        <div class="field">
+          <label>Couleur / اللون <span id="colorEcho">Black / Garnet</span></label>
+          <div class="opts" id="colorOpts">
+            <button type="button" class="opt on" data-color="Black / Garnet"><span class="dotc" style="background:linear-gradient(135deg,#111 52%,#722f37 52%)"></span>Black / Garnet</button>
+            <button type="button" class="opt" data-color="Black / White"><span class="dotc" style="background:linear-gradient(135deg,#111 52%,#e9e9ee 52%)"></span>Black / White</button>
+            <button type="button" class="opt" data-color="Garnet / Black"><span class="dotc" style="background:linear-gradient(135deg,#722f37 52%,#111 52%)"></span>Garnet / Black</button>
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <label>Quantity</label>
-        <div class="qty">
-          <button id="minus" aria-label="Decrease quantity" type="button">−</button>
-          <input id="qty" type="number" value="1" min="1" max="5" inputmode="numeric" aria-label="Quantity">
-          <button id="plus" aria-label="Increase quantity" type="button">+</button>
+        <div class="field-row">
+          <div class="field">
+            <label for="qty">Quantité / الكمية</label>
+            <div class="qty">
+              <button id="minus" type="button" aria-label="Diminuer la quantité">−</button>
+              <input id="qty" type="number" value="1" min="1" max="5" inputmode="numeric" aria-label="Quantité">
+              <button id="plus" type="button" aria-label="Augmenter la quantité">+</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="wilaya">Wilaya / الولاية <span class="req">*</span></label>
+            <select id="wilaya" class="select" aria-describedby="wilayaErr">
+              <option value="">— Choisir la wilaya / اختر الولاية —</option>
+            </select>
+            <p class="err-msg" id="wilayaErr"></p>
+          </div>
         </div>
-      </div>
 
-      <div class="summary">
-        <div class="sum-row"><span>Unit price</span><span id="unitPrice">7,900 DA</span></div>
-        <div class="sum-row"><span>Pairs</span><span id="sumQty">1</span></div>
-        <div class="sum-row"><span>Delivery</span><span id="sumShip">600 DA</span></div>
-        <div class="sum-row total"><span>Total</span><span id="sumTotal">8,500 DA</span></div>
-      </div>
+        <div class="zone-chip" id="zoneChip" aria-live="polite">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="zoneText">Sélectionnez votre wilaya pour voir les frais de livraison.</span>
+          <span class="zprice" id="zonePrice">—</span>
+        </div>
 
-      <a href="#" id="waBtn" class="btn btn-wa btn-lg btn-block">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23z"/></svg>
-        Send my order on WhatsApp
-      </a>
+        <!-- ---------- CLIENT ---------- -->
+        <div class="field-row">
+          <div class="field">
+            <label for="fullName">Nom &amp; Prénom / الاسم واللقب <span class="req">*</span></label>
+            <input id="fullName" class="input" type="text" name="name" placeholder="Ex : Amine Belkacem" autocomplete="name" required>
+            <p class="err-msg" id="fullNameErr"></p>
+          </div>
 
-      <div class="builder-foot">
-        <a href="tel:+213555000000" id="callLink">Call to order</a>
-        <a href="#faq">Questions?</a>
-      </div>
+          <div class="field">
+            <label for="phone">Numéro de téléphone / رقم الهاتف <span class="req">*</span></label>
+            <input id="phone" class="input" type="tel" name="phone" inputmode="tel" placeholder="05 55 12 34 56" autocomplete="tel" required>
+            <p class="err-msg" id="phoneErr"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="note">Adresse / ملاحظة <span style="opacity:.6">(optionnel)</span></label>
+          <textarea id="note" class="textarea" rows="2" placeholder="Adresse exacte, repère, horaire de livraison…"></textarea>
+        </div>
+
+        <!-- ---------- SUMMARY ---------- -->
+        <div class="summary">
+          <div class="sum-row"><span>Prix unitaire</span><span id="unitPrice">7,900 DZD</span></div>
+          <div class="sum-row"><span>Paires</span><span id="sumQty">1</span></div>
+          <div class="sum-row"><span>Livraison</span><span id="sumShip">— à définir</span></div>
+          <div class="sum-row total"><span>Total à payer</span><span id="sumTotal">7,900 DZD</span></div>
+        </div>
+
+        <button type="submit" id="waBtn" class="btn btn-wa btn-lg btn-block">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
+          <span>Valider la commande sur WhatsApp<span class="ar">تأكيد الطلب عبر واتساب</span></span>
+        </button>
+
+        <div class="builder-foot">
+          <a href="tel:+213555000000" id="callLink">Appeler pour commander</a>
+          <a href="#faq">Questions ? / أسئلة</a>
+        </div>
+
+        <div class="note" style="margin-top:18px">
+          <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 9.7-8 10.9C7.4 21.7 4 17 4 12V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span>Paiement à la livraison (COD) — walo d'avance. Vous vérifiez le colis avant de payer.</span>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -1176,38 +1267,43 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
 <section class="section" id="faq">
   <div class="wrap">
     <div class="section-head reveal" style="margin-inline:auto;text-align:center">
-      <span class="eyebrow" style="justify-content:center">Before you order</span>
-      <h2 class="display">Frequently asked</h2>
+      <span class="eyebrow" style="justify-content:center">Questions fréquentes</span>
+      <h2 class="display">On répond avant que vous demandiez</h2>
+      <p class="lead" style="margin-inline:auto">كل شي واضح — بلا مفاجآت. Si quelque chose manque, écrivez-nous sur WhatsApp.</p>
     </div>
 
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-q">How do I pay? Is there anything upfront?<span class="ico"></span></button>
-        <div class="faq-a"><p>Nothing upfront. You pay cash to the courier when the gloves arrive at your door. If your wilaya is not covered by cash on delivery we will tell you on WhatsApp before you commit — never after.</p></div>
+        <button class="faq-q">Comment je paie ? Y a-t-il quelque chose à payer d'avance ? / كيفاش نخلص؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Walo d'avance. Vous payez cash au livreur quand les gants vous arrivent à la maison. On confirme tout sur WhatsApp avant l'expédition — prix, taille et délai — pas de mauvaise surprise à l'arrivée.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How long does delivery take?<span class="ico"></span></button>
-        <div class="faq-a"><p>Between 24 and 72 hours nationwide, depending on how far your wilaya is from our dispatch point. You get a tracking message on WhatsApp once your parcel is handed to the courier.</p></div>
+        <button class="faq-q">Combien coûte la livraison ? / شحال التوصيل؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Selon votre wilaya : <b>400 DZD</b> pour Alger et ses environs (Alger, Blida, Boumerdès, Tipaza), <b>600 DZD</b> pour le Nord, l'Est et l'Ouest, <b>800 DZD</b> pour les Hauts plateaux et le Sud, et <b>1000 DZD</b> pour le Grand Sud. Le montant s'affiche direct dans le récapitulatif dès que vous choisissez votre wilaya.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Which size should I order?<span class="ico"></span></button>
-        <div class="faq-a"><p>For fitness boxing and pad work: 12 oz. For heavy bag training: 14 oz. For sparring: 16 oz. Competition under 60 kg: 10 oz. Still unsure? Message us your weight and what you train — we will pick for you in one reply.</p></div>
+        <button class="faq-q">En combien de temps je reçois ma commande ? / قداش وقت؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Entre 24h et 72h selon la wilaya. Dès que le colis part avec le livreur, on vous envoie le numéro de suivi sur WhatsApp, et le livreur vous appelle avant de passer.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">What if the size is wrong when it arrives?<span class="ico"></span></button>
-        <div class="faq-a"><p>You have 7 days to exchange it, free of charge, as long as the gloves have not been used outdoors or damaged. Just message us on WhatsApp and we arrange the swap with the same courier.</p></div>
+        <button class="faq-q">Quelle taille je dois choisir ? / أشمن قياس يصلحلي؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Pour la salle, les paos et le fitness : <b>12 oz</b>. Pour le sac lourd : <b>14 oz</b> (le plus demandé). Pour le sparring : <b>16 oz</b>. Compétition -60 kg : <b>10 oz</b>. Si vous hésitez encore, envoyez-nous votre poids et ce que vous entraînez — on choisit pour vous en une seule réponse.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Do these gloves work for kickboxing and Muay Thai?<span class="ico"></span></button>
-        <div class="faq-a"><p>Yes. The attached pre-shaped thumb and the 42 mm multi-layer core make them suitable for boxing, kickboxing, Muay Thai and general bag or mitt work. For clinch-heavy training we recommend the 16 oz.</p></div>
+        <button class="faq-q">Et si la taille ne va pas ? / إذا ما جاتش القياس؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Vous avez <b>7 jours</b> pour l'échange, gratuitement, à condition que les gants n'aient pas servi dehors ni été abîmés. Un message sur WhatsApp et on arrange l'échange avec le même livreur.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Can I order several pairs or for my whole gym?<span class="ico"></span></button>
-        <div class="faq-a"><p>Absolutely. Take the Gym Pack (3 pairs) or message us for 5+ pairs — we give club pricing and issue an invoice for your gym. Mixed sizes and colours are fine in any pack.</p></div>
+        <button class="faq-q">Ça marche pour la boxe, le kickboxing et le Muay Thai ?<span class="ico"></span></button>
+        <div class="faq-a"><p>Oui, pour tous les styles : boxe anglaise, kickboxing, Muay Thai, bag work et paos. Le pouce attaché et le noyau de 42 mm protègent bien les mains. Pour le sparring et le clinch, prenez la 16 oz.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How do I clean and store them?<span class="ico"></span></button>
-        <div class="faq-a"><p>Wipe the leather with a damp cloth after training, never soak them, and let them air dry at room temperature — never on a radiator or in direct sun. Stuff them with the mesh bag so they keep their shape, and the liner keeps odour under control.</p></div>
+        <button class="faq-q">Vous livrez pour les salles et les clubs ? / للقاعات؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Bien sûr. Prenez le <b>pack Gym</b> (3 paires) pour commencer, ou contactez-nous pour 5 paires et plus : on fait un prix club et on vous sort une facture au nom de votre salle. Mélange de tailles et de couleurs accepté.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Comment je les entretiens ? / كيفاش نعتنيهم؟<span class="ico"></span></button>
+        <div class="faq-a"><p>Après chaque séance : un chiffon humide sur le cuir, jamais les tremper dans l'eau, et laissez-les sécher à l'air normal — pas au soleil, pas sur le radiateur. Rangez-les avec le sac filet pour garder la forme, et la doublure anti-bactérienne s'occupe de l'odeur.</p></div>
       </div>
     </div>
   </div>
@@ -1274,7 +1370,7 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
 <!-- ========================= FLOATING ELEMENTS ======================= -->
 <a href="#" class="float-wa" id="floatWa" aria-label="Order on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.38c0-4.54 3.7-8.23 8.24-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23z"/></svg>
-  Chat / Order
+  Commander / اطلب
 </a>
 
 <button class="to-top" id="toTop" aria-label="Back to top">
@@ -1283,106 +1379,308 @@ footer{background:var(--coal);border-top:1px solid var(--line-soft);padding:66px
 
 <!-- sticky mobile order bar -->
 <div class="mobile-bar">
-  <div class="p">7,900 DA<small>per pair</small></div>
-  <a href="#" class="btn btn-wa" id="mobileWa">
+  <div class="p">7,900 DZD<small>per pair</small></div>
+  <a href="#order" class="btn btn-wa" id="mobileWa">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
-    Order now
+    Commander
   </a>
 </div>
 
 <script>
 /* ==========================================================================
-   BH_CONFIG — 👉 EDIT THIS BLOCK ONLY 👈
+   BH FIGHT CO. — CHECKOUT ENGINE
+   --------------------------------------------------------------------------
+   👉 MODIFIEZ UNIQUEMENT LE BLOC BH_CONFIG CI-DESSOUS
+      (numéro WhatsApp, prix, frais de livraison par zone)
    ========================================================================== */
 const BH_CONFIG = {
-  // WhatsApp number in INTERNATIONAL format: country code + number, digits only.
-  // Algeria example: 0555 12 34 56  ->  "213555123456"
-  whatsapp: "213555000000",
+  // Numéro WhatsApp au format international, chiffres uniquement.
+  // Exemple Algérie : 0555 12 34 56  ->  "213555123456"
+  whatsapp:     "213555000000",
   phoneDisplay: "+213 555 000 000",
-  email: "orders@bhfight.co",
+  email:        "orders@bhfight.co",
 
-  // Prices in Algerian Dinar
-  pricePerPair: 7900,
-  shipFlat: 600,
-  freeShipFrom: 10000,
-  shipNote: "Free delivery above 10,000 DA"
+  brand:    "BH FIGHT CO.",
+  product:  "BH PRO-01 Pro Training Gloves",
+  currency: "DZD",
+
+  // --- Prix (en DZD) ---
+  pricePerPair: 7900,   // 1 paire
+  bundle2:      14500,  // 2 paires (Double Pack)
+  bundle3:      20900,  // 3 paires (Gym Pack)
+  extraPair:    6967,   // 4e et 5e paire (tarif club)
+
+  // 0 = désactivé. Mettez 20000 pour offrir la livraison au-delà de 20 000 DZD.
+  freeShipFrom: 0,
+
+  // --- Frais de livraison par zone ---
+  zones: {
+    1: { label: "Alger & environs",      price: 400  },
+    2: { label: "Nord / Est / Ouest",    price: 600  },
+    3: { label: "Hauts plateaux & Sud",  price: 800  },
+    4: { label: "Grand Sud",             price: 1000 }
+  }
 };
 
+/* --------------------------------------------------------------------------
+   LES 58 WILAYAS — code · nom FR · nom AR · zone de livraison
+   -------------------------------------------------------------------------- */
+const WILAYAS = [
+  {c:1, fr:"Adrar",                 ar:"أدرار",          z:4},
+  {c:2, fr:"Chlef",                 ar:"الشلف",          z:2},
+  {c:3, fr:"Laghouat",              ar:"الأغواط",        z:3},
+  {c:4, fr:"Oum El Bouaghi",        ar:"أم البواقي",     z:2},
+  {c:5, fr:"Batna",                 ar:"باتنة",          z:3},
+  {c:6, fr:"Béjaïa",                ar:"بجاية",          z:2},
+  {c:7, fr:"Biskra",                ar:"بسكرة",          z:3},
+  {c:8, fr:"Béchar",                ar:"بشار",           z:4},
+  {c:9, fr:"Blida",                 ar:"البليدة",        z:1},
+  {c:10,fr:"Bouira",                ar:"البويرة",        z:2},
+  {c:11,fr:"Tamanrasset",           ar:"تمنراست",        z:4},
+  {c:12,fr:"Tébessa",               ar:"تبسة",           z:3},
+  {c:13,fr:"Tlemcen",               ar:"تلمسان",         z:2},
+  {c:14,fr:"Tiaret",                ar:"تيارت",          z:3},
+  {c:15,fr:"Tizi Ouzou",            ar:"تيزي وزو",       z:2},
+  {c:16,fr:"Alger",                 ar:"الجزائر",        z:1},
+  {c:17,fr:"Djelfa",                ar:"الجلفة",         z:3},
+  {c:18,fr:"Jijel",                 ar:"جيجل",           z:2},
+  {c:19,fr:"Sétif",                 ar:"سطيف",           z:2},
+  {c:20,fr:"Saïda",                 ar:"سعيدة",          z:2},
+  {c:21,fr:"Skikda",                ar:"سكيكدة",         z:2},
+  {c:22,fr:"Sidi Bel Abbès",        ar:"سيدي بلعباس",    z:2},
+  {c:23,fr:"Annaba",                ar:"عنابة",          z:2},
+  {c:24,fr:"Guelma",                ar:"قالمة",          z:2},
+  {c:25,fr:"Constantine",           ar:"قسنطينة",        z:2},
+  {c:26,fr:"Médéa",                 ar:"المدية",         z:2},
+  {c:27,fr:"Mostaganem",            ar:"مستغانم",        z:2},
+  {c:28,fr:"M'Sila",                ar:"المسيلة",        z:3},
+  {c:29,fr:"Mascara",               ar:"معسكر",          z:3},
+  {c:30,fr:"Ouargla",               ar:"ورقلة",          z:4},
+  {c:31,fr:"Oran",                  ar:"وهران",          z:2},
+  {c:32,fr:"El Bayadh",             ar:"البيض",          z:3},
+  {c:33,fr:"Illizi",                ar:"إليزي",          z:4},
+  {c:34,fr:"Bordj Bou Arréridj",    ar:"برج بوعريريج",   z:2},
+  {c:35,fr:"Boumerdès",             ar:"بومرداس",        z:1},
+  {c:36,fr:"El Tarf",               ar:"الطارف",         z:2},
+  {c:37,fr:"Tindouf",               ar:"تندوف",          z:4},
+  {c:38,fr:"Tissemsilt",            ar:"تيسمسيلت",       z:3},
+  {c:39,fr:"El Oued",               ar:"الوادي",         z:4},
+  {c:40,fr:"Khenchela",             ar:"خنشلة",          z:3},
+  {c:41,fr:"Souk Ahras",            ar:"سوق أهراس",      z:3},
+  {c:42,fr:"Tipaza",                ar:"تيبازة",         z:1},
+  {c:43,fr:"Mila",                  ar:"ميلة",           z:2},
+  {c:44,fr:"Aïn Defla",             ar:"عين الدفلى",     z:2},
+  {c:45,fr:"Naâma",                 ar:"النعامة",        z:3},
+  {c:46,fr:"Aïn Témouchent",        ar:"عين تموشنت",     z:2},
+  {c:47,fr:"Ghardaïa",              ar:"غرداية",         z:4},
+  {c:48,fr:"Relizane",              ar:"غليزان",         z:2},
+  {c:49,fr:"Timimoun",              ar:"تيميمون",        z:4},
+  {c:50,fr:"Bordj Badji Mokhtar",   ar:"برج باجي مختار", z:4},
+  {c:51,fr:"Ouled Djellal",         ar:"أولاد جلال",     z:4},
+  {c:52,fr:"Béni Abbès",            ar:"بني عباس",       z:4},
+  {c:53,fr:"In Salah",              ar:"عين صالح",       z:4},
+  {c:54,fr:"In Guezzam",            ar:"عين قزام",       z:4},
+  {c:55,fr:"Touggourt",             ar:"تقرت",           z:4},
+  {c:56,fr:"Djanet",                ar:"جانت",           z:4},
+  {c:57,fr:"El M'Ghair",            ar:"المغير",         z:4},
+  {c:58,fr:"El Meniaa",             ar:"المنيعة",        z:4}
+];
+
 /* ==========================================================================
-   1. WHATSAPP LINKS
+   HELPERS
    ========================================================================== */
-const $  = (s, c = document) => c.querySelector(s);
-const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
-const fmt = n => n.toLocaleString('en-US');
+const $  = (sel, ctx = document) => ctx.querySelector(sel);
+const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+const fmt = n => Math.round(n).toLocaleString('en-US');
+const pad = n => String(n).padStart(2, '0');
+
+const state = { size: '14 oz', color: 'Black / Garnet', qty: 1, zone: 0 };
+
+/* ==========================================================================
+   1. WILAYA DROPDOWN — construit les 58 wilayas, groupées par zone
+   ========================================================================== */
+function buildWilayaSelect(){
+  const sel = $('#wilaya');
+  if (!sel) return;
+
+  Object.keys(BH_CONFIG.zones).map(Number).sort((a, b) => a - b).forEach(z => {
+    const group = document.createElement('optgroup');
+    group.label = "Zone " + z + " — " + BH_CONFIG.zones[z].label +
+                  " (" + fmt(BH_CONFIG.zones[z].price) + " DZD)";
+
+    WILAYAS.filter(w => w.z === z).forEach(w => {
+      const opt = document.createElement('option');
+      opt.value = String(w.c);
+      opt.textContent = pad(w.c) + " — " + w.fr + " / " + w.ar;
+      opt.dataset.code = w.c;
+      opt.dataset.fr   = w.fr;
+      opt.dataset.ar   = w.ar;
+      opt.dataset.zone = w.z;
+      group.appendChild(opt);
+    });
+    sel.appendChild(group);
+  });
+}
+
+function selectedWilaya(){
+  const sel = $('#wilaya');
+  if (!sel || !sel.value) return null;
+  const opt = sel.options[sel.selectedIndex];
+  return {
+    code: Number(opt.dataset.code),
+    fr:   opt.dataset.fr,
+    ar:   opt.dataset.ar,
+    zone: Number(opt.dataset.zone)
+  };
+}
+
+/* ==========================================================================
+   2. PRICING — Total = (Prix de base × Quantité) + Frais de livraison
+   ========================================================================== */
+function computeTotals(){
+  const q = state.qty;
+  let unit, subtotal;
+
+  if (q >= 3){        unit = BH_CONFIG.extraPair;                 subtotal = BH_CONFIG.bundle3 + (q - 3) * BH_CONFIG.extraPair; }
+  else if (q === 2){  unit = BH_CONFIG.bundle2 / 2;               subtotal = BH_CONFIG.bundle2; }
+  else {              unit = BH_CONFIG.pricePerPair;              subtotal = BH_CONFIG.pricePerPair; }
+
+  const zone     = BH_CONFIG.zones[state.zone];
+  let   shipping = zone ? zone.price : 0;
+  if (BH_CONFIG.freeShipFrom && subtotal >= BH_CONFIG.freeShipFrom) shipping = 0;
+
+  return {
+    unit: Math.round(unit),
+    subtotal: subtotal,
+    shipping: shipping,
+    hasZone: !!zone,
+    zoneLabel: zone ? zone.label : '',
+    total: subtotal + shipping
+  };
+}
+
+/* ==========================================================================
+   3. RENDER — le total se recalcule instantanément
+   ========================================================================== */
+function render(){
+  const t = computeTotals();
+  const w = selectedWilaya();
+
+  $('#sizeEcho').textContent  = state.size;
+  $('#colorEcho').textContent = state.color;
+  $('#unitPrice').textContent = fmt(t.unit) + " DZD";
+  $('#sumQty').textContent    = state.qty + (state.qty > 1 ? " paires" : " paire");
+  $('#sumShip').textContent   = t.hasZone
+        ? (t.shipping === 0 ? "OFFERTE" : fmt(t.shipping) + " DZD")
+        : "— à définir";
+  $('#sumTotal').textContent  = fmt(t.total) + " DZD";
+
+  // zone chip
+  const chip = $('#zoneChip');
+  if (w){
+    $('#zoneText').innerHTML = "Zone " + w.zone + " — <b>" + w.zone + ". " + BH_CONFIG.zones[w.zone].label +
+        "</b> · livraison 24–72h vers <b>" + w.fr + "</b>";
+    $('#zonePrice').textContent = fmt(BH_CONFIG.zones[w.zone].price) + " DZD";
+    chip.style.borderColor = "rgba(150,56,70,.7)";
+  } else {
+    $('#zoneText').textContent = "Sélectionnez votre wilaya pour voir les frais de livraison.";
+    $('#zonePrice').textContent = "—";
+    chip.style.borderColor = "rgba(150,56,70,.42)";
+  }
+
+  $('#qty').value = state.qty;
+  $('#waBtn').dataset.url = buildWhatsAppLink();
+}
+
+/* ==========================================================================
+   4. WHATSAPP MESSAGE
+   ========================================================================== */
+function buildMessage(){
+  const t      = computeTotals();
+  const w      = selectedWilaya();
+  const name   = $('#fullName').value.trim();
+  const phone  = $('#phone').value.trim();
+  const note   = $('#note').value.trim();
+
+  const lines = [
+    "Nouvelle Commande - " + BH_CONFIG.brand + " 🥊",
+    "----------------",
+    "Nom: " + name,
+    "Téléphone: " + phone,
+    "Wilaya: " + (w ? pad(w.code) + " - " + w.fr : "-"),
+    "Taille: " + state.size,
+    "Couleur: " + state.color,
+    "Quantité: " + state.qty,
+    "Total à payer (avec livraison): " + fmt(t.total) + " " + BH_CONFIG.currency
+  ];
+
+  if (note) lines.push("Adresse / Note: " + note);
+  lines.push("");
+  lines.push("Merci de confirmer la commande 🙏");
+
+  return lines.join("\n");          // encodeURIComponent convertit les sauts en %0A
+}
 
 function waLink(text){
   return "https://wa.me/" + BH_CONFIG.whatsapp + "?text=" + encodeURIComponent(text);
 }
 
-// generic "I'm interested" message used by every CTA outside the builder
-const heroMsg =
-  "Hello BH Fight Co. 👋\n\n" +
-  "I'm interested in the BH PRO-01 Boxing Gloves.\n" +
-  "Could you confirm availability, price and delivery time?\n\n" +
-  "Thanks!";
-
-function refreshGenericLinks(){
-  ['#floatWa', '#mobileWa', '#footerWa'].forEach(sel => {
-    const el = $(sel);
-    if (el) el.href = waLink(heroMsg);
-  });
-  $$('[data-wa="direct"]').forEach(el => el.href = waLink(heroMsg));
-  const tel = $('#callLink');
-  if (tel) tel.href = 'tel:+' + BH_CONFIG.whatsapp;
-  const em = $('a[href^="mailto:"]');
-  if (em) em.href = 'mailto:' + BH_CONFIG.email;
-  const fw = $('#footerWa');
-  if (fw) fw.textContent = 'WhatsApp: ' + BH_CONFIG.phoneDisplay;
+function buildWhatsAppLink(){
+  return waLink(buildMessage());
 }
 
 /* ==========================================================================
-   2. ORDER BUILDER
+   5. VALIDATION DU FORMULAIRE
    ========================================================================== */
-const state = { size: '14 oz', color: 'Black / Red', qty: 1 };
+let submitAttempted = false;
 
-function computeTotals(){
-  const { pricePerPair, shipFlat, freeShipFrom } = BH_CONFIG;
+const cleanPhone = v => String(v || '').replace(/[\s\-\.\(\)]/g, '');
+function isValidPhone(v){
+  const p = cleanPhone(v).replace(/^\+?213/, '0');
+  return /^0[5-7]\d{8}$/.test(p);          // 05 / 06 / 07 + 8 chiffres
+}
+const isValidName = v => v.trim().length >= 3 && /[A-Za-z\u0600-\u06FF]/.test(v);
 
-  // Bundle tiers: 1 pair -> full price · 2 pairs -> Double Pack · 3+ -> Gym Pack rate
-  let subtotal, unit;
-  if (state.qty >= 3){        unit = 20900 / 3;  subtotal = Math.round(unit * state.qty); }
-  else if (state.qty === 2){  unit = 14500 / 2;  subtotal = 14500; }
-  else {                      unit = pricePerPair; subtotal = pricePerPair; }
-
-  const shipping = subtotal >= freeShipFrom ? 0 : shipFlat;
-  return { subtotal, unit: Math.round(unit), shipping, total: subtotal + shipping };
+function setErr(el, msg){
+  el.classList.add('err');
+  const box = document.getElementById(el.id + 'Err');
+  if (box){ box.textContent = msg; box.classList.add('show'); }
+}
+function clearErr(el){
+  el.classList.remove('err');
+  const box = document.getElementById(el.id + 'Err');
+  if (box){ box.textContent = ''; box.classList.remove('show'); }
 }
 
-function render(){
-  const t = computeTotals();
-  $('#sizeEcho').textContent  = state.size;
-  $('#colorEcho').textContent = state.color;
-  $('#unitPrice').textContent = fmt(t.unit) + " DA";
-  $('#sumQty').textContent    = state.qty + (state.qty > 1 ? " pairs" : " pair");
-  $('#sumShip').textContent   = t.shipping === 0 ? "FREE" : fmt(t.shipping) + " DA";
-  $('#sumTotal').textContent  = fmt(t.total) + " DA";
-  $('#qty').value             = state.qty;
+function validate(){
+  let ok = true, first = null;
+  const name = $('#fullName'), phone = $('#phone'), wilaya = $('#wilaya');
 
-  const msg =
-    "Hello BH Fight Co. 👋\n\n" +
-    "I'd like to order boxing gloves:\n" +
-    "• Model: BH PRO-01 Pro Training Gloves\n" +
-    "• Size: " + state.size + "\n" +
-    "• Colour: " + state.color + "\n" +
-    "• Quantity: " + state.qty + (state.qty > 1 ? " pairs" : " pair") + "\n" +
-    "• Total: " + fmt(t.total) + " DA" + (t.shipping === 0 ? " (free delivery)" : " (incl. delivery)") + "\n\n" +
-    "Please confirm availability and delivery to my wilaya.\n" +
-    "Name: \nWilaya: \nAddress: ";
+  if (!isValidName(name.value)){
+    setErr(name, "Entrez votre nom et prénom / أدخل الاسم واللقب"); ok = false; first = first || name;
+  } else clearErr(name);
 
-  $('#waBtn').href = waLink(msg);
+  if (!isValidPhone(phone.value)){
+    setErr(phone, "Numéro invalide — exemple : 0555 12 34 56 / رقم غير صحيح"); ok = false; first = first || phone;
+  } else clearErr(phone);
+
+  if (!wilaya.value){
+    setErr(wilaya, "Choisissez votre wilaya / اختر ولايتك"); ok = false; first = first || wilaya;
+  } else clearErr(wilaya);
+
+  if (!ok && first){
+    try {
+      if (first.focus) first.focus({ preventScroll: true });
+      if (first.scrollIntoView) first.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    } catch (_) { /* navigateurs anciens : on ignore */ }
+  }
+  return ok;
 }
 
-// size + colour option buttons
+/* ==========================================================================
+   6. ÉVÉNEMENTS
+   ========================================================================== */
+// taille
 $$('#sizeOpts .opt').forEach(b => b.addEventListener('click', () => {
   $$('#sizeOpts .opt').forEach(x => x.classList.remove('on'));
   b.classList.add('on');
@@ -1390,6 +1688,7 @@ $$('#sizeOpts .opt').forEach(b => b.addEventListener('click', () => {
   render();
 }));
 
+// couleur
 $$('#colorOpts .opt').forEach(b => b.addEventListener('click', () => {
   $$('#colorOpts .opt').forEach(x => x.classList.remove('on'));
   b.classList.add('on');
@@ -1397,18 +1696,76 @@ $$('#colorOpts .opt').forEach(b => b.addEventListener('click', () => {
   render();
 }));
 
-// quantity
+// quantité
 $('#minus').addEventListener('click', () => { state.qty = Math.max(1, state.qty - 1); render(); });
 $('#plus').addEventListener('click',  () => { state.qty = Math.min(5, state.qty + 1); render(); });
-$('#qty').addEventListener('change', e => {
+$('#qty').addEventListener('input', e => {
   let v = parseInt(e.target.value, 10);
-  if (isNaN(v)) v = 1;
+  if (isNaN(v)) return;
+  state.qty = Math.min(5, Math.max(1, v));
+  render();
+});
+$('#qty').addEventListener('blur', e => {
+  let v = parseInt(e.target.value, 10);
+  if (isNaN(v) || v < 1) v = 1;
   state.qty = Math.min(5, Math.max(1, v));
   render();
 });
 
+// wilaya -> recalcul instantané
+$('#wilaya').addEventListener('change', e => {
+  state.zone = e.target.value ? Number(e.target.options[e.target.selectedIndex].dataset.zone) : 0;
+  if (submitAttempted) validate();
+  render();
+});
+
+// champs client
+['#fullName', '#phone', '#note'].forEach(sel => {
+  $(sel).addEventListener('input', () => { if (submitAttempted) validate(); render(); });
+});
+
+// envoi
+$('#orderForm').addEventListener('submit', e => {
+  e.preventDefault();
+  submitAttempted = true;
+  if (!validate()) return;
+
+  const url = buildWhatsAppLink();
+  const win = window.open(url, '_blank', 'noopener');
+  if (!win) window.location.href = url;      // fallback si popup bloquée
+
+  const btn = $('#waBtn');
+  btn.classList.add('busy');
+  setTimeout(() => btn.classList.remove('busy'), 2500);
+});
+
 /* ==========================================================================
-   3. FAQ ACCORDION
+   7. LIENS WHATSAPP GÉNÉRIQUES (hero, header, bouton flottant)
+   ========================================================================== */
+const genericMsg =
+  "Bonjour " + BH_CONFIG.brand + " 🥊\n\n" +
+  "Je suis intéressé(e) par les gants " + BH_CONFIG.product + ".\n" +
+  "Pouvez-vous me confirmer la disponibilité, la taille et le délai de livraison ?\n\n" +
+  "Merci !";
+
+function refreshGenericLinks(){
+  const url = waLink(genericMsg);
+  ['#floatWa', '#footerWa'].forEach(sel => {
+    const el = $(sel);
+    if (el) el.href = url;
+  });
+  $$('[data-wa="direct"]').forEach(el => el.href = url);
+
+  const tel = $('#callLink');
+  if (tel) tel.href = 'tel:+' + BH_CONFIG.whatsapp;
+  const mail = $('a[href^="mailto:"]');
+  if (mail) mail.href = 'mailto:' + BH_CONFIG.email;
+  const fw = $('#footerWa');
+  if (fw) fw.textContent = 'WhatsApp: ' + BH_CONFIG.phoneDisplay;
+}
+
+/* ==========================================================================
+   8. FAQ ACCORDION
    ========================================================================== */
 $$('.faq-item').forEach(item => {
   const q = $('.faq-q', item), a = $('.faq-a', item);
@@ -1426,7 +1783,7 @@ $$('.faq-item').forEach(item => {
 });
 
 /* ==========================================================================
-   4. HEADER / NAV / SCROLL UI
+   9. HEADER / NAV / SCROLL UI
    ========================================================================== */
 const header = $('#header'), burger = $('#burger'), mobileMenu = $('#mobileMenu');
 const toTop = $('#toTop'), progress = $('#progress');
@@ -1449,7 +1806,6 @@ function onScroll(){
   const h = document.documentElement.scrollHeight - window.innerHeight;
   progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
 
-  // active nav link
   let current = '';
   $$('section[id]').forEach(sec => {
     if (y >= sec.offsetTop - 140) current = sec.id;
@@ -1464,7 +1820,7 @@ onScroll();
 toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 /* ==========================================================================
-   5. SCROLL REVEAL
+   10. SCROLL REVEAL + COUNTERS
    ========================================================================== */
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -1476,9 +1832,6 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
 $$('.reveal').forEach(el => io.observe(el));
 
-/* ==========================================================================
-   6. STAT COUNTERS
-   ========================================================================== */
 const counterIO = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
@@ -1497,9 +1850,10 @@ const counterIO = new IntersectionObserver((entries) => {
 $$('[data-count]').forEach(el => counterIO.observe(el));
 
 /* ==========================================================================
-   7. MISC
+   11. INIT
    ========================================================================== */
 $('#year').textContent = new Date().getFullYear();
+buildWilayaSelect();
 refreshGenericLinks();
 render();
 </script>
